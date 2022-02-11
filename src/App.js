@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import Grid from '@material-ui/core/Grid'
+import './index.css'
 
-function App() {
+const App = () => {
+  const [cuteText, setCuteText] = useState('')
+
+  const adjectives = ["beautiful", "cute", "hot", "adorable", "affectionate", "alluring", 
+                      "amazing", "amazing", "attractive", "beloved", "bewitching", "breathtaking", 
+                      "bubbly", "candid", "captivating", "charming", "classy", "cuddly", "delightful", 
+                      "dependable", "elegant", "emotional", "entertaining", "fashionable", "fearless", 
+                      "fiery", "flawless", "fun", "genuine", "gorgeous", "graceful", "magnetic", "innocent", 
+                      "intelligent", "sassy", "romantic", "ravishing", "radiating", "pretty", "precious", 
+                      "perfect", "nice", "lovely", "likable", "kind-hearted", "joyful", "sexy", "smart", 
+                      "sophisticated", "special", "sweet", "wonderful", "warm-hearted", "voluptuous", 
+                      "valued", "unique", "understanding", "trustworthy", "talented", "mine - are you?"]
+
+  const generateCuteText = () => {
+    let random = Math.floor(Math.random() * adjectives.length)
+    console.log(adjectives[random])
+    setCuteText('"Reveti, you are ' + adjectives[random] + '!"')
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Grid xs='12' id='text-box'>
+        <div id='text'>{cuteText}</div>
+        <button onClick={generateCuteText}>Read what Abhishek wants to say</button>
+      </Grid>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
