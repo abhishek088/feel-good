@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/feel-good/static/css/main.279c868f.css",
+    "main.js": "/feel-good/static/js/main.53f75fb7.js",
+    "static/js/787.27f0dab2.chunk.js": "/feel-good/static/js/787.27f0dab2.chunk.js",
+    "index.html": "/feel-good/index.html",
+    "main.279c868f.css.map": "/feel-good/static/css/main.279c868f.css.map",
+    "main.53f75fb7.js.map": "/feel-good/static/js/main.53f75fb7.js.map",
+    "787.27f0dab2.chunk.js.map": "/feel-good/static/js/787.27f0dab2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.279c868f.css",
+    "static/js/main.53f75fb7.js"
+  ]
+}
