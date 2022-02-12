@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Grid from '@material-ui/core/Grid'
+import Text from './components/Text'
+import Button from './components/Button'
 import './index.css'
 
 const App = () => {
@@ -21,12 +23,11 @@ const App = () => {
     setCuteText('"Reveti, you are ' + adjectives[random] + '!"')
   }
 
-
   return (
     <div>
       <Grid xs='12' id='text-box'>
-        <div id='text'>{cuteText}</div>
-        <button onClick={generateCuteText}>Read what Abhishek wants to say</button>
+        <Text passText={cuteText} />
+        <Button onClick={generateCuteText} />
       </Grid>
     </div>
   )

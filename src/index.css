@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background: #afc04f;
+  background: #f1beef;
 }
 
 #text-box {
@@ -26,9 +26,9 @@ body {
 }
 
 button {
-    background: #afc04f;
+    background-color: #f1beef;
     border: none;
-    color: rgb(46, 58, 170);
+    color: rgb(235, 27, 27);
     padding: .7rem 1rem;
     font-size: .9rem;
     font-weight: bold;
@@ -43,6 +43,6 @@ button:hover {
     opacity: 0.9;
 }
 
-#footer {
-    text-align: center;
+#something{
+  color: black;
 }
